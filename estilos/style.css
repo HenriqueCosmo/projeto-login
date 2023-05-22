@@ -1,6 +1,102 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: var(--cor2);
+    height: 100vh;
+    width: 100vw;
+}
+
 :root{
     --cor1: #49a09d;
     --cor2: #5f2c82;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.446);
+
+}
+
+
+section#login > div#imagem{
+    background: var(--cor2) url(../imagens/pexels-igor-visuals-3681805.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: right center;
+}
+
+
+
+
+
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+    
+    
+
+}
+
+
+.boxnome, .boxsenha{
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.boxnome > input{
+    border-radius: 20px;
+    
+}
+
+.boxsenha > input{
+    border-radius: 20px;
+    
+}
+
+.boxbotao > input{
+    margin: 8px 2px;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor1);
+    color: white;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0px 10px 10px 10px;
+    padding-top: 10px;
+
+}
+
+.paragrafo{
+    font-size: 1em;
+    padding: 0px 0px 10px 0px;
+
 }

@@ -11,12 +11,25 @@
     <main>
         <section id="login">
             <div id="imagem">
-
+               <!--Aqui vai uma imagem de fundo (em css)-->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem vindo novamente. Faça login para acessar sua conta</p>
-                <form action="login.php" method="post"></form>
+                <p class="paragrafo">Seja bem vindo novamente. Faça login para acessar sua conta</p>
+                <form action="login.php" method="post">
+                    <p class="boxnome">
+                        <label for="iname">Nome</label>
+                        <input type="text" id="iname" name="name">
+                    </p>
+                    <p class="boxsenha">
+                        <label for="isenha"> Senha</label>
+                        <input type="password" id="isenha" name="senha">
+                    </p>
+                    <p class="boxbotao">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
             </div>
 
         </section>
