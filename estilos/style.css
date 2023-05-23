@@ -30,6 +30,7 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
+
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
@@ -60,45 +61,13 @@ section#login > div#formulario{
     
 
 }
-
-
-.boxnome, .boxsenha{
-    margin: 10px;
+section#login > div#formulario > h1{
     text-align: center;
-    
-}
+    margin-bottom: 10px;
 
-.boxnome > input{
-    border-radius: 20px;
-    
-}
-
-.boxsenha > input{
-    border-radius: 20px;
-    
-}
-
-.boxbotao > input{
-    margin: 8px 2px;
-    text-align: center;
-    font-size: 0.7em;
-    padding: 3px 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--cor1);
-    color: white;
-}
-
-h1{
-    font-size: 2em;
-    margin: 0px 10px 10px 10px;
-    padding-top: 10px;
 
 }
 
-.paragrafo{
-    font-size: 1em;
-    padding: 0px 0px 10px 0px;
-
+section#login > div#formulario > p{
+    font-size: 0.8em;
 }
