@@ -29,7 +29,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 280px;
     height: 550px;
     border-radius: 20px;
@@ -38,6 +37,7 @@ section#login{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.446);
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -64,26 +64,58 @@ section#login > div#formulario{
 section#login > div#formulario > h1{
     text-align: center;
     margin-bottom: 10px;
+    font-size: 1.8em;
+    
 
 
 }
 
 section#login > div#formulario > p{
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight: bolder;
+
 }
 
 form > div.campo{
     background-color: var(--cor2);
     display: block;
-    width: 80%;
+    width: 95%;
     height: 40px;
     border-radius: 10px;
     margin: 5px 0px;
+    border: 2px solid var(--cor2);
 }
+
+
 
 div.campo > label {
     display: none;
 }
+
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #85dfdc;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+
+}
+
 
 
 
@@ -94,7 +126,7 @@ div.campo > label {
 form > input[type=submit], input[type=reset]{
     display: block;
     font-size: 1em;
-    width: 80%;    
+    width: 90%;    
     height: 40px;
     background-color: var(--cor1);
     color: white;
@@ -115,7 +147,7 @@ form > a.botao{
     display: block;
     text-align: center;
     font-size: 1em;
-    width: 80%;
+    width: 90%;
     height: 40px;
     background-color: white;
     text-decoration: none;
